@@ -126,7 +126,18 @@ header {
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 3px 55px 3px 10px;
+  padding: 3px 45px 3px 10px;
+}
+
+.main-navigation > li:nth-child(n+2):nth-child(-n+4) > a::after  {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #ffffff;
 }
 
 .main-navigation > li:first-child {
